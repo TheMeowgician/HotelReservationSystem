@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="./global.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#FFFFFF] flex flex-col min-h-screen ">
+    <header class="lg:px-16 px-4 bg-[#FFFFFF] flex flex-wrap items-center py-4 shadow-md sticky top-0 z-50">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#home" data-page="home.html" class="text-xl font-[PoppinsBold] text-[38px]">Darrel&Ayien</a>
+        </div>
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul
+                    class="relative md:flex items-center justify-between text-[18px] text-gray-700 pt-4 md:pt-0 md:gap-x-4">
+                    <div id="nav-indicator"
+                        class="absolute left-0 bottom-0 h-full bg-black rounded-md z-0 transition-all duration-300 ease-in-out">
+                    </div>
+                    <li class=" relative z-10"><a class="block px-4 py-2 transition-colors duration-200" href="#home"
+                            data-page="home.html">Home</a></li>
+                    <li class="relative z-10"><a class="block px-4 py-2 transition-colors duration-200" href="#about"
+                            data-page="about.html">About</a></li>
+                    <li class="relative z-10"><a class="block px-4 py-2 transition-colors duration-200"
+                            href="#reservation" data-page="reservation.html">Reservation</a></li>
+                    <li class="relative z-10"><a class="block px-4 py-2 transition-colors duration-200 md:mb-0 mb-2"
+                            href="#contact" data-page="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="page-content" class="flex-grow">
+    </div>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">
+                &copy; 2025 Darrel&Ayien Hotels. All Rights Reserved.
+            </p>
+            <p class="text-xs mt-1">
+                Taguig, Metro Manila, Philippines
+            </p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
